@@ -18,6 +18,10 @@ version = "0.2.4"
 [dependencies.iota-trytes]
 git = "https://github.com/iotaledger/iota.rs.git"
 
+[dependencies.iota-curl]
+git = "https://github.com/iotaledger/iota.rs.git"
+default-features = false
+
 [dependencies.svd-lpc1768]
 git = "https://github.com/th0br0/svd-lpc1768.git"
 
