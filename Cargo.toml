@@ -1,0 +1,28 @@
+[package]
+authors = ["Andreas C. Osowski <andreas@osowski.de>"]
+categories = ["embedded", "no-std"]
+keywords = ["arm", "cortex-m", "template"]
+license = "MIT"
+name = "demo-lpc1768"
+version = "0.0.1"
+
+[dependencies]
+alloc-cortex-m = "*"
+
+[dependencies.cortex-m]
+version = "0.2.11"
+
+[dependencies.cortex-m-rt]
+version = "0.2.4"
+
+[dependencies.iota-trytes]
+git = "https://github.com/iotaledger/iota.rs.git"
+
+[dependencies.svd-lpc1768]
+git = "https://github.com/th0br0/svd-lpc1768.git"
+
+[profile]
+
+[profile.release]
+debug = true
+lto = true
